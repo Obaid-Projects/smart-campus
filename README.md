@@ -17,3 +17,5 @@ The API allows campus facilities managers to create, retrieve, and delete rooms 
 3. Right click the project and select **Clean and Build**
 4. Right click the project and select **Run** (NetBeans will deploy it to Tomcat automatically).
 5. The API is available at : `http://localhost:8080/smart-campus/api/v1`.
+
+## Sample curl Commands
