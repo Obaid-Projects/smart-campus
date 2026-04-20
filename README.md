@@ -32,3 +32,6 @@ curl -X DELETE http://localhost:8080/smart-campus/api/v1/rooms/HALL-101
 ### 6. Get a sensor readings history
 curl -X GET http://localhost:8080/smart-campus/api/v1/sensors/TEMP-001/readings
 ---
+## Report: Answers to Coursework Questions
+### Part 1.1 - JAX-RS Resource Lifecycle
+By default, JAX-RS creates a new instance of each resource class for every incoming HTTP request.
