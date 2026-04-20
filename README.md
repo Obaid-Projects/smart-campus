@@ -10,3 +10,10 @@ The API allows campus facilities managers to create, retrieve, and delete rooms 
 - Java JDK 8 or higher
 - Apache Maven
 - Apache Tomcat 9
+
+### Steps
+1. Clone the repository: git clone https://github.com/Obaid-Projects/smart-campus.git .
+2. Open the project in NetBeans or any IDE of your choice (the following instructions will most likely only work on NetBeans as i haven't tested it on other IDEs but they should be similar).
+3. Right click the project and select **Clean and Build**
+4. Right click the project and select **Run** (NetBeans will deploy it to Tomcat automatically).
+5. The API is available at : `http://localhost:8080/smart-campus/api/v1`.
