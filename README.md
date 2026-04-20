@@ -19,3 +19,15 @@ The API allows campus facilities managers to create, retrieve, and delete rooms 
 5. The API is available at : `http://localhost:8080/smart-campus/api/v1`.
 
 ## Sample curl Commands
+### 1. Get all rooms
+curl -X GET http://localhost:8080/smart-campus/api/v1/rooms
+### 2. Create a new room
+curl -X POST http://localhost:8080/smart-campus/api/v1/rooms -H "Content-Type: application/json" -d "{"id":"HALL-101","name":"Main Hall","capacity":200}"
+### 3. Get all sensors filtered by type
+curl -X GET "http://localhost:8080/smart-campus/api/v1/sensors?type=CO2"
+### 4. Post a reading to a sensor
+curl -X POST http://localhost:8080/smart-campus/api/v1/sensors/TEMP-001/readings -H "Content-Type: application/json" -d "{"value":23.5}"
+### 5.Delete a room
+curl -X DELETE http://localhost:8080/smart-campus/api/v1/rooms/HALL-101
+### 6. Get a sensor readings history
+curl -X GET http://localhost:8080/smart-campus/api/v1/sensors/TEMP-001/readings
